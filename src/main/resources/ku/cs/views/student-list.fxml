@@ -10,13 +10,13 @@
 
 <AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.controllers.StudentListController">
    <children>
-      <Label layoutX="134.0" layoutY="23.0" text="Student List">
+      <Label layoutX="31.0" layoutY="23.0" text="Student List">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
       <ListView fx:id="studentListView" layoutX="31.0" layoutY="50.0" prefHeight="300.0" prefWidth="300.0" />
-      <Label layoutX="362.0" layoutY="50.0" text="Selected Student">
+      <Label layoutX="362.0" layoutY="50.0" text="Selected Student" textFill="#0055ff">
          <font>
             <Font size="18.0" />
          </font>
@@ -40,13 +40,13 @@
             </Label>
             <Label alignment="CENTER" contentDisplay="RIGHT" layoutY="115.0" text="GIve Score: ">
                <graphic>
-                  <TextField fx:id="giveScoreTextField" alignment="CENTER_RIGHT" prefWidth="250.0" />
+                  <TextField fx:id="giveScoreTextField" alignment="CENTER_RIGHT" prefWidth="150.0" />
                </graphic>
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <Button layoutX="362.0" layoutY="117.0" mnemonicParsing="false" onAction="#onGiveScoreButtonClick" text="Ok" />
+            <Button layoutX="263.0" layoutY="117.0" mnemonicParsing="false" onAction="#onGiveScoreButtonClick" text="Ok" />
             <Pane layoutX="98.0" layoutY="-2.0">
                <children>
                   <Label fx:id="idLabel" text="idLabel">
