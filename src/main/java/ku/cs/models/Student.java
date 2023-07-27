@@ -11,6 +11,11 @@ public class Student {
         score = 0;
     }
 
+    public Student(String id, String name, double score) {
+        this.id = id;
+        this.name = name;
+        this.score = score;
+    }
     public void changeName(String name) {
         if (!name.trim().equals("")) {
             this.name = name.trim();
