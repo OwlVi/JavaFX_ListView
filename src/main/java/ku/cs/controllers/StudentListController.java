@@ -2,6 +2,7 @@ package ku.cs.controllers;
 
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
@@ -97,6 +98,14 @@ public class StudentListController {
         } else {
             giveScoreTextField.setText("");
             errorLabel.setText("");
+        }
+    }
+
+    public void onNextButtonClick(ActionEvent actionEvent) {
+        try {
+            FXRouter.goTo("students-table");
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
     }
 }
